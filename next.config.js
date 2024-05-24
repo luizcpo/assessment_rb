@@ -5,6 +5,11 @@
 await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+        domains: ["raw.githubusercontent.com"],
+        formats: ["image/avif", "image/webp"],
+      },
+};
 
 export default config;
